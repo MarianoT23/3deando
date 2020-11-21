@@ -1,0 +1,37 @@
+.nuestro-trabajo {
+    background-color: map-get($green, 'light');
+
+    &__slider-container {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 1fr 0.1fr;
+        grid-template-areas:    'arrow-left slider arrow-right'
+                                'dots dots dots';
+        place-items: center;
+    }
+
+    &__glider-left {
+        grid-area: arrow-left;
+    }
+
+    &__glider-right {
+        grid-area: arrow-right;
+    }
+
+    &__slider {
+        grid-area: slider;
+        max-width: 100%;
+    }
+
+    .glider-track {
+        height: 300px;
+    }
+
+    &__slide {
+        margin: 0 20px;
+    }
+
+    &__glider-dots {
+        grid-area: dots;
+    }
+}

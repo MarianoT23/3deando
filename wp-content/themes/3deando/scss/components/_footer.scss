@@ -1,0 +1,20 @@
+footer {
+    background-color: map-get($green, 'light');
+    margin-top: 30px;
+
+    .container {
+        display: flex; flex-wrap: wrap;
+    }
+    
+    .contact-info {
+        width: 50%;
+    }
+
+    .social {
+        width: 50%;
+    }
+
+    .legal {
+        width: 100%;
+    }
+}
